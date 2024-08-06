@@ -56,6 +56,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        shift_lower {
+            bindings = <&tog 1>;
+            key-positions = <37 24>;
+        };
+
+        shift_raise {
+            bindings = <&tog 2>;
+            key-positions = <24 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -68,10 +82,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp Q              &kp W         &kp E        &kp R        &kp T      &kp Y      &kp U        &kp I        &kp O         &kp P             &kp BSPC
-&kp LCTRL  &hml LEFT_SHIFT A  &hml LCTRL S  &hml LALT D  &hml LCMD F  &kp G      &kp H      &hmr RCMD J  &hmr RALT K  &hmr RCTRL L  &hmr RSHIFT SEMI  &kp APOS
-&kp LSHFT  &kp Z              &kp X         &kp C        &kp V        &kp B      &kp N      &kp M        &kp COMMA    &kp DOT       &kp FSLH          &kp TAB
-                                            &kp LGUI     &mo 1        &kp RET    &kp SPACE  &mo 2        &kp RALT
+&kp ESC    &kp Q  &kp W  &kp E     &kp R        &kp T      &kp Y      &kp U        &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &hml LCMD F  &kp G      &kp H      &hmr RCMD J  &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp B      &kp N      &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp TAB
+                         &kp LGUI  &mo 1        &kp RET    &kp SPACE  &mo 2        &kp RALT
             >;
         };
 
@@ -100,10 +114,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp STAR  &kp BSPC
-&trans     &trans    &kp SLASH  &kp PIPE  &kp BSLH  &kp TILDE    &kp PLUS   &kp MINUS  &kp LBRC  &kp RBRC  &trans    &kp GRAVE
-&kp LSHFT  &trans    &trans     &trans    &trans    &trans       &kp EQUAL  &kp UNDER  &kp LBKT  &kp RBKT  &trans    &tog 3
-                                &kp LGUI  &trans    &kp RET      &kp SPACE  &trans     &kp RALT
+&kp TAB  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp STAR  &kp BSPC
+&trans   &trans    &kp SLASH  &kp PIPE  &kp BSLH  &kp TILDE    &kp PLUS   &kp MINUS  &kp LBRC  &kp RBRC  &trans    &kp GRAVE
+&trans   &trans    &trans     &trans    &trans    &trans       &kp EQUAL  &kp UNDER  &kp LBKT  &kp RBKT  &trans    &tog 3
+                              &kp LGUI  &trans    &kp RET      &kp SPACE  &trans     &kp RALT
             >;
         };
 
