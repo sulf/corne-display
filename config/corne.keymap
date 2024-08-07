@@ -32,8 +32,8 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-trigger-key-positions = <18 6 7 19 31 30 40 41 39 32 20 8 10 9 21 33 34 22 11 23 35>;
+            tapping-term-ms = <600>;
+            hold-trigger-key-positions = <39 40 30 18 6 7 19 31 41 32 20 8 9 21 33 34 22 10 11 23 35>;
         };
 
         hmr: homerow_mods_right {
@@ -42,8 +42,8 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-trigger-key-positions = <0 12 24 13 1 3 4 5 16 17 28 29 36 37 38 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+            tapping-term-ms = <600>;
+            hold-trigger-key-positions = <0 12 24 25 13 1 2 14 26 27 15 3 4 16 28 36 37 38 29 17 5>;
         };
 
         as_ht: autoshift_hold_tap {
