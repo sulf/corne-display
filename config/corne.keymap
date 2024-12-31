@@ -100,7 +100,7 @@
             bindings = <
 &trans  &kp N1        &kp N2        &kp N3        &kp N4     &kp N5     &kp N6     &kp N7          &kp N8          &kp N9        &kp N0           &trans
 &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LSHFT  &trans     &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &trans     &trans     &trans     &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &trans
+&tog 1  &kp F1        &kp F2        &kp F3        &kp F4     &kp F5     &trans     &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &trans
                                     &kp NUMBER_0  &trans     &kp RET    &kp SPACE  &trans          &kp RALT
             >;
         };
@@ -114,10 +114,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB  &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp STAR  &kp BSPC
-&trans   &trans    &kp SLASH  &kp PIPE  &kp BSLH  &kp TILDE    &kp PLUS   &kp MINUS  &kp LBRC  &kp RBRC  &trans    &kp GRAVE
-&trans   &trans    &trans     &trans    &trans    &trans       &kp EQUAL  &kp UNDER  &kp LBKT  &kp RBKT  &trans    &tog 3
-                              &kp LGUI  &trans    &kp RET      &kp SPACE  &trans     &kp RALT
+&kp TAB  &kp EXCL  &kp AT     &kp HASH  &kp DLLR       &kp PRCNT           &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp STAR          &kp BSPC
+&trans   &trans    &kp SLASH  &kp PIPE  &kp BSLH       &kp TILDE           &kp PLUS   &kp MINUS  &kp LBRC  &kp RBRC  &kp LESS_THAN     &kp GRAVE
+&tog 2   &trans    &trans     &trans    &kp LESS_THAN  &kp GREATER_THAN    &kp EQUAL  &kp UNDER  &kp LBKT  &kp RBKT  &kp GREATER_THAN  &tog 3
+                              &kp LGUI  &trans         &kp RET             &kp SPACE  &trans     &kp RALT
             >;
         };
 
